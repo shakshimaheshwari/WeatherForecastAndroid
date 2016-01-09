@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.sakshi.weatherforecastandroid.DetailsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/MoreDetails7daysText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/MoreDetailsTextId"
+            android:enabled="true"
+            android:textColor="#000000"
+            android:textSize="60px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/MoreDetails7daysText"
+        android:layout_marginTop="40px"
+        android:id="@+id/Buttons7daysLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next 24 Hours"
+            android:id="@+id/Next24hrsId" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next 7 Days"
+            android:id="@+id/Next7daysId" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/HeadingLayout"
+        android:layout_below="@+id/Buttons7daysLayout"
+        android:layout_marginTop="20px"
+        android:background="#00ffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/TimeId"
+            android:textColor="#000000"
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:id="@+id/SummaryId"
+            android:layout_marginLeft="75dp"
+            android:textColor="#000000"
+            android:textSize="50px" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:id="@+id/TemperatureId"
+            android:textColor="#000000"
+            android:textSize="50px" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/DynamicTableRow"
+        android:layout_below="@+id/HeadingLayout">
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>
